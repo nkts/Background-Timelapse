@@ -2,7 +2,7 @@ SDK=$(shell cat local.properties | grep sdk-location | cut -d= -f2)
 
 debug:
 	ant debug
-	$(SDK)/platform-tools/adb install -r bin/Timelapse-debug.apk
+	ant installr
 
 release:
 	ant release
@@ -11,4 +11,7 @@ release:
 	$(SDK)/platform-tools/adb install -r bin/Timelapse-final.apk
 
 clean:
-	-rm -r bin gen
+	ant clean
+
+timelapse:
+    ffmpeg -r 5 -i img%06d.jpg -vcodec libx264 time-lapse.mp4

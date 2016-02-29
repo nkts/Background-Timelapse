@@ -7,7 +7,8 @@
 	android:stretchColumns="1"
 	android:gravity="center_horizontal"
 	android:layout_width="fill_parent"
-	android:layout_height="fill_parent">
+	android:layout_height="fill_parent"
+	android:keepScreenOn="true">
 
 	<TableRow android:gravity="center">
 		<Button android:id="@+id/start"
@@ -15,14 +16,14 @@
 			android:text="Start">
 			<requestFocus />
 		</Button>
-		<Button android:id="@+id/convert"
-			android:layout_weight="1" android:layout_width="0dip"
-			android:text="Convert All">
-		</Button>
+		<!--<Button android:id="@+id/convert"-->
+			<!--android:layout_weight="1" android:layout_width="0dip"-->
+			<!--android:text="Convert All">-->
+		<!--</Button>-->
 		<TextView	android:id="@+id/filler"
 			android:layout_weight="1" android:layout_width="0dip"
 			android:gravity="center"
-			android:text="Delay (min.\n1000 ms)">
+			android:text="Delay (min.\n60000 ms)">
 		</TextView>
 	</TableRow>
 
@@ -39,7 +40,7 @@
 			android:id="@+id/delay"
 			android:layout_weight="1" android:layout_width="0dip"
 			android:numeric="integer"
-			android:text="1000">
+			android:text="60000">
 		</EditText>
 	</TableRow>
 
@@ -67,4 +68,3 @@
 	/>
 
 </TableLayout>
-

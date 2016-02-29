@@ -113,7 +113,7 @@ public class TimelapseService extends Service {
 			return TimelapseService.this;
 		}
 	}
-	
+
 	private final IBinder mybinder = new TimelapseBinder();
 
 	@Override public IBinder onBind( Intent intent ) {
@@ -219,7 +219,7 @@ public class TimelapseService extends Service {
 		Time now = new Time();
 		now.set( System.currentTimeMillis() );
 
-		outdir = "/sdcard/floe.timelapse/" + now.format("%Y%m%d-%H%M%S/");
+		outdir = "/sdcard/Pictures/timelapse/" + now.format("%Y%m%d-%H%M%S/");
 		File tmp = new File(outdir);
 
 		if ((tmp.isDirectory() == false) && (tmp.mkdirs() == false)) {
@@ -263,4 +263,3 @@ public class TimelapseService extends Service {
 		return (timer != null);
 	}
 }
-

@@ -67,8 +67,8 @@ public class Timelapse extends Activity {
 		button = (Button)findViewById( R.id.stop );
 		button.setOnClickListener(mUnbindListener);
 
-		button = (Button)findViewById(R.id.convert);
-		button.setOnClickListener(mConvertListener);
+//		button = (Button)findViewById(R.id.convert);
+//		button.setOnClickListener(mConvertListener);
 
 		button = (Button)findViewById(R.id.about);
 		button.setOnClickListener(mAboutListener);
