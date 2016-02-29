@@ -2,7 +2,7 @@ SDK=$(shell cat local.properties | grep sdk-location | cut -d= -f2)
 
 debug:
 	ant debug
-	ant installr
+	ant installd
 
 release:
 	ant release
@@ -14,4 +14,5 @@ clean:
 	ant clean
 
 timelapse:
-    ffmpeg -r 5 -i img%06d.jpg -vcodec libx264 time-lapse.mp4
+	ffmpeg -r 5 -i img%06d.jpg -vcodec libx264 time-lapse.mp4
+
