@@ -20,10 +20,11 @@
 			<!--android:layout_weight="1" android:layout_width="0dip"-->
 			<!--android:text="Convert All">-->
 		<!--</Button>-->
+		<TextView android:layout_width="0dip" android:layout_weight="1" />
 		<TextView	android:id="@+id/filler"
 			android:layout_weight="1" android:layout_width="0dip"
 			android:gravity="center"
-			android:text="Delay (min.\n60000 ms)">
+			android:text="Delay (min.\n1000 ms)">
 		</TextView>
 	</TableRow>
 
